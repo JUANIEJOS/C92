@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maths Quiz Game</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body id="body">
+<h4 style="color: white;" id="player1_name"></h4><span id="player1_score"></span>
+<br>
+<h4 style="color: white;" id="player2_name"></h4><span id="player2_score"></span>
+<div class="container">
+	<center>
+		<h2 style="color: white;">The Maths Quiz Game!</h2>
+<h3 id="question_turn">Question Turn</h3>
+<h3 id="answer_turn">Answer Turn</h3>
+		<br>
+		<div id="output" class="col-lg-6"></div>
+		<br>
+
+		<label>Send You Problem: <b style="color: white;">Try putting a Maths Problem with basic multiplication operator.</b></label>
+		<h4 id="points"></h4>
+
+		<br>
+<input placeholder="Number 1" type="text" class="form-control" id="number_1" >
+<br>
+<input placeholder="Number 2" type="text" class="form-control" id="number_2" >
+<br>
+<button onclick="askQuestion();" class="btn btn-success" style="width:30%">Send Question</button>
+	</center>
+</div>
+
+<script src="game_page_1.js"></script>
+</body>
+</html>
